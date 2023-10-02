@@ -1,11 +1,13 @@
 import React from "react";
+import Charts from "../Charts/Charts";
+import ChartD3JS from "../ChartD3JS/ChartD3JS";
 
 function HomePage() {
   return (
-    <main class="mainpage">
-      <div class="container center">
-        <div class="page-area">
-          <div class="text-box">
+    <main className="mainpage">
+      <div className="container center">
+        <div className="page-area">
+          <div className="text-box">
             <h1>Stay on track</h1>
             <p>
               Do you know where you are spending your money? If you really stop
@@ -15,7 +17,7 @@ function HomePage() {
             </p>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1>Alerts</h1>
             <p>
               What if your clothing budget ended? You will get an alert. The
@@ -23,7 +25,7 @@ function HomePage() {
             </p>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1>Results</h1>
             <p>
               People who stick to a financial plan, budgeting every expense, get
@@ -33,14 +35,14 @@ function HomePage() {
             </p>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1>Free</h1>
             <p>
               This app is free!!! And you are the only one holding your data!
             </p>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1>Stay on track</h1>
             <p>
               Do you know where you are spending your money? If you really stop
@@ -50,7 +52,7 @@ function HomePage() {
             </p>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1>Alerts</h1>
             <p>
               What if your clothing budget ended? You will get an alert. The
@@ -58,7 +60,7 @@ function HomePage() {
             </p>
           </div>
 
-          <div class="text-box">
+          <div className="text-box">
             <h1>Results</h1>
             <p>
               People who stick to a financial plan, budgeting every expense, get
@@ -67,20 +69,8 @@ function HomePage() {
               and accounted for.
             </p>
           </div>
-
-          <article>
-            <h1>Chart-Bulbul's Monthly-Budget</h1>
-            <p>
-              <canvas id="myChart" width="800" height="400"></canvas>
-            </p>
-          </article>
-
-          <article>
-            <h1>New Chart(D3JS)</h1>
-            <p>
-              <div id="myPieChart"></div>
-            </p>
-          </article>
+          <Charts />
+          <ChartD3JS />
         </div>
       </div>
     </main>
